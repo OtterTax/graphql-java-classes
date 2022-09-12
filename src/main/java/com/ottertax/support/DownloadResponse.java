@@ -48,9 +48,16 @@ public class DownloadResponse {
         }
 
         public static class Node {
+          private String otxId;
           private String uploaderId;
           private String pdf;
 
+          public String getOtxId() {
+            return(otxId);
+          }
+          public void setOtxId(String otxId) {
+            this.otxId = otxId;
+          }
           public String getUploaderId() {
             return(uploaderId);
           }
